@@ -1,0 +1,35 @@
+# Core environment management
+python-dotenv
+
+# OpenAI
+openai
+
+# Google Gemini
+google-generativeai
+
+# Groq
+groq
+
+# Mistral AI
+mistralai
+
+# LangChain ecosystem
+langchain
+langchain-community
+langchain-core
+langgraph
+
+# Provider integrations
+langchain-openai
+langchain-google-genai
+langchain-groq
+langchain-mistralai
+
+# Utilities
+requests
+pydantic
+tiktoken
+
+# Optional but useful
+ipykernel
+rich
