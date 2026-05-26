@@ -24,6 +24,22 @@ langchain-openai
 langchain-google-genai
 langchain-groq
 langchain-mistralai
+langchain-huggingface
+
+# For Hugging Face Hub integration
+transformers
+huggingface_hub
+sentence-transformers
+tokenizers
+safetensors
+accelerate
+
+# PyTorch backend
+torch
+
+# Vector DB / RAG
+faiss-cpu
+chromadb
 
 # Utilities
 requests
@@ -33,3 +49,5 @@ tiktoken
 # Optional but useful
 ipykernel
 rich
+
+
