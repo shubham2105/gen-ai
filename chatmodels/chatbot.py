@@ -5,11 +5,17 @@ load_dotenv()
 from langchain_mistralai.chat_models import ChatMistralAI
 model_mistral = ChatMistralAI(model="devstral-2512")
 
+messages = [
+
+]
 # response_mistral = model_mistral.invoke(prompt)
 while True:
     print("------------------------ Welcome to the Mistral Chatbot, press 0 to exit ------------------------")
     prompt = input("You : ")
+    messages.append(prompt)
     if prompt == "0":
         break
-    response_mistral = model_mistral.invoke(prompt)
+    response_mistral = model_mistral.invoke(messages)
+    messages.append(response_mistral.content)
     print("Bot : ", response_mistral.content)
+print(messages)
